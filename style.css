@@ -112,15 +112,15 @@ a:active {
   width: 30px; height: 30px; 
 }
 
-/*
+
 
  .entradas_table>tr div:nth-child(odd) {
   background-color: grey;
 } Not working at all :'( 
-*/
 
-/*
- * This is a RIBBON extra class
+
+
+ /* This is a RIBBON extra class*/
 
 
 .ribbon{
@@ -175,8 +175,8 @@ a:active {
 }
 
 
-* ENd of ribbon extra class
-*/
+/* ENd of ribbon extra class*/
+
 
   @media only screen and (max-width: 768px) {
     #footer {
