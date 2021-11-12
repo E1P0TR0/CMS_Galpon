@@ -113,14 +113,14 @@ a:active {
 }
 
 
-
+/*
  .entradas_table>tr div:nth-child(odd) {
   background-color: grey;
 } Not working at all :'( 
 
 
 
- /* This is a RIBBON extra class*/
+ /* This is a RIBBON extra class
 
 
 .ribbon{
