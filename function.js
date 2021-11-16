@@ -60,7 +60,7 @@ slideNovedades();
 
 //changestars
 
-var goldenstar = "pictures/goldenstar-ico.png";
+/*var goldenstar = "pictures/goldenstar-ico.png";
 var oldstar = "pictures/blackstar-ico.jpg";
 var blackstar = document.getElementById("blackstar");
 
@@ -71,7 +71,7 @@ blackstar.addEventListener('mouseover', function(){
 
 blackstar.addEventListener('mouseout', function(){
   blackstar.src = oldstar;
-});
+});*/
 
 // Change the img src for a new one with a grey arrow
 
