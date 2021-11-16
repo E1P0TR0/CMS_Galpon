@@ -1,7 +1,15 @@
 <?php
 
-$connection = mysqli_connect('localhost', 'root', 'peladito06', 'DB_PolleríaGalpon') or die(mysql_error($mysqli));
+$connection = mysqli_connect('54.210.160.248', 'root', 'peladito06', 'DB_PGalpon');
 
+if($connection->connect_error){
+	die("ERROR").$connection->connect_error);
+}
+else
+{
+	echo "conexion exitosa";
+}
+/*
 insert($connection);
 
 function insert($connection){
@@ -17,6 +25,6 @@ function insert($connection){
 			VALUES('$name','$numero','$direccion','$pedido')";
 	mysqli_query($connection, $consult);
 	mysqli_close($connection);
-}
+}*/
 
 ?>

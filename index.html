@@ -1,3 +1,6 @@
+<?php
+ include 'conexion.php';
+?>
 <!DOCTYPE html>
 <html>
 	<title> Restaurante "El Galpon" </title>
@@ -149,7 +152,7 @@
     </div>
     <div class="w3-container">
       <p style="color: #b30000; font-size: 19px;">Para realizar una reserva rellene los campos con la información requerida y en seguida nos contactaremos con usted al número ingresado para la entrega del pedido al llegar a su destino, en caso de no obtener respuesta se tomará como una solicitud falsa y la reserva será descartada.</p>
-      <form action="/conexion.php"  target="_blank">
+      <form action="conexion.php" method="post">
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px;"><i class="w3-xxlarge fa fa-user"></i></div>
               <div class="w3-rest"> <!--  Ocupa el resto del ancho de la columna (porsiaca) -->
