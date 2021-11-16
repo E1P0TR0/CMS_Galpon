@@ -15,17 +15,17 @@ function init() {
        
 }
 
-let images = [{ src: 'pictures/salmon.jpg',
-                description: 'Una sutil combinacion de sabores es la clave de nuestras comidas, hechas simplemente para usted. ',
-                descriptionTittle:'Salmón'
+let images = [{ src: 'pictures/cuarto_pollo_galpon.jpg',
+                description: 'Una sutil combinacion de sabores clásicos es la clave de nuestras comidas, hechas simplemente para usted. ',
+                descriptionTittle: '1/4 de pollo : '
                 },{
-                src: 'pictures/lagsana.jpg',
-                description: 'Exquisita lagsagna. Nuestra especialidad de la casa hará explotar su paladar en una bomba de sabores.',
-                descriptionTittle: 'Plato del dia: '
+                src: 'pictures/pollo_galpon.jpg',
+                description: 'Exquisito pollo con papas. Nuestra especialidad de la casa hará explotar su paladar en una bomba de sabores.',
+                descriptionTittle: 'Pollo a la brasa : '
                 },{
-                src:'pictures/phelado.jpg',
-                description: 'Para que la historia sea maravillosa es necesario de un dulce final',
-                descriptionTittle: 'Postre de chocolate italiano'}
+                src:'pictures/salchipapa_galpon.jpg',
+                description: 'Para que la historia sea maravillosa es necesario probar la salchipapa más deliciosa',
+                descriptionTittle: 'Salchipapa clásica : '}
             ],
      arrow = [{
                 src : "pictures/arrow_l.svg",
