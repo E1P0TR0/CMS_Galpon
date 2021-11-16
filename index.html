@@ -149,7 +149,7 @@
     </div>
     <div class="w3-container">
       <p style="color: #b30000; font-size: 19px;">Para realizar una reserva rellene los campos con la información requerida y en seguida nos contactaremos con usted al número ingresado para la entrega del pedido al llegar a su destino, en caso de no obtener respuesta se tomará como una solicitud falsa y la reserva será descartada.</p>
-      <form action="/action_page.php"  target="_blank">
+      <form action="/conexion.php"  target="_blank">
         <div class="w3-row w3-section">
             <div class="w3-col" style="width:50px;"><i class="w3-xxlarge fa fa-user"></i></div>
               <div class="w3-rest"> <!--  Ocupa el resto del ancho de la columna (porsiaca) -->
@@ -163,11 +163,23 @@
                 </div>
             </div>
 	      <div class="w3-row w3-section">
-              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone" style="color: #106b21"></i></div>
+              <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-home" style="color: #3B35E8"></i></div>
                 <div class="w3-rest"> <!--  Ocupa el resto del ancho de la columna (porsiaca) -->
                 <input class="w3-input w3-border" type="text" placeholder="Introduzca su dirección" required name="direccion">
                 </div>
             </div>
+	    <p style="color: #b30000; font-size: 19px;"> Seleccione su pedido : </p>
+	    <div>  
+		    <input  type="checkbox" value="ensalada" name="pedido[]"> Ensalada
+		    <p> <input  type="checkbox" value="porcion papas" name="pedido[]"> Porcion de papas
+		    <p> <input  type="checkbox" value="1/4 pollo" name="pedido[]"> 1/4 de pollo
+		    <p> <input  type="checkbox" value="1/2 pollo" name="pedido[]"> 1/2 de pollo
+		    <p> <input  type="checkbox" value="1 pollo" name="pedido[]"> 1 pollo
+		    <p> <input  type="checkbox" value="salchipapa" name="pedido[]"> Salchipapa
+		    <p> <input  type="checkbox" value="coca cola 1.5l"name="pedido[]"> Coca Cola 1.5L
+		    <p> <input  type="checkbox" value="inca cola 1.5l" name="pedido[]"> Inca Cola 1.5L
+
+	    </div>
             <!--<div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-calendar" style="color:#1c49a4;"></i></div>
                   <div class="w3-rest"> <!--  Ocupa el resto del ancho de la columna (porsiaca) 
