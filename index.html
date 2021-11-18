@@ -1,6 +1,3 @@
-<?php
- include 'conexion.php';
-?>
 <!DOCTYPE html>
 <html>
 	<title> Restaurante "El Galpon" </title>
@@ -25,7 +22,7 @@
   </div>
   <div class="w3-display-middle w3-container w3-xlarge" style=" margin-top: 50px; width: 390px;">
     <p style="float: right;"><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-hover-white" > Ver la carta </button></p>
-    <p><button onclick="document.getElementById('contact').style.display='block'"  class="w3-button w3-hover-white">Reservas</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'"  class="w3-button w3-hover-white">Delivery</button></p>
   </div>
 
   <div class="w3-display-topmiddle w3-container" id="grad"> 
@@ -148,7 +145,7 @@
   <div class="w3-modal-content w3-animate-zoom ">
     <div class="w3-container  w3-card-4" style="background-color:#282c37;">
       <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
-      <h1 style="color:ivory; ">Reservas</h1> <!-- like this color 6c2119 -->
+      <h1 style="color:ivory; ">Pedido</h1> <!-- like this color 6c2119 -->
     </div>
     <div class="w3-container">
       <p style="color: #b30000; font-size: 19px;">Para realizar una reserva rellene los campos con la información requerida y en seguida nos contactaremos con usted al número ingresado para la entrega del pedido al llegar a su destino, en caso de no obtener respuesta se tomará como una solicitud falsa y la reserva será descartada.</p>
@@ -229,7 +226,7 @@
     
                 
         
-        <p><button class="w3-button" type="submit">Hacer reserva</button></p>
+        <p><button class="w3-button" type="submit" name="pedir">Hacer pedido</button></p>
       </form>
     </div>
   </div>
