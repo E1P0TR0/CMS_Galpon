@@ -18,16 +18,18 @@ if(isset($_POST['pedir'])){
 	$pedido = '';
 	if(isset($_POST['pedido'])) {
                 $pedido = implode(', ' , $_POST['pedido']);
-        }
-	$consult = "INSERT INTO Pedidos (Nombre, Numero, Direccion, Pedido)
-					VALUES('$name','$numero','$direccion','$pedido')";
+	}
+	$precio = $_POST['precio'];
+	$consult = "INSERT INTO Pedidos (Nombre, Numero, Direccion, Pedido, Precio)
+					VALUES('$name','$numero','$direccion','$pedido','$precio')";
 	$result = mysqli_query($connection, $consult);
 	if($result){
 		echo '<h2>Información de pedido :</h2><br>'.
 			'<h3>Cliente   :  '.$name .'</h3><br>'.
 			'<h3>Número    :  '.$numero.'</h3><br>'.
 		        '<h3>Pedido    :  '.$pedido.'</h3><br>'.
-		        '<h3>Dirección :  '.$direccion.'</h3><br>'; 
+			'<h3>Dirección :  '.$direccion.'</h3><br>'.
+			'<h3>Precio    :   S/ '.$precio.'</h3>';  
 	}
 	else {
 		echo 'Hubo un error en su compra, intentelo de nuevo por favor, gracias';

@@ -123,9 +123,6 @@
     <div class="w3-container" id="carta2"><h5>Gaseosas de 500mlt
         <em id='#dotOfMenu'>......................................................................<span id="largerDots">.................................................
         </span> </em> <b style="float: right;">S/. 2.50</b></h5></div>
-    <div class="w3-container" id="carta1"><h5>Gaseosas de 1Lt
-        <em id='#dotOfMenu'>.....................................................................<span id="largerDots">..................................................
-        </span>  </em><b style="float: right; ">S/. 6.00</b></h5></div>
     <div class="w3-container" id="carta2"> <h5>Gaseosas de 1.5Lts  
         <em id='#dotOfMenu'>.....................................................................<span id="largerDots">..................................................
         </span>  </em><b style="float: right;">S/. 10.00</b></h5></div>
@@ -169,25 +166,29 @@
                 </div>
             </div>
 	    <p style="color: #b30000; font-size: 19px;"> Seleccione su pedido : </p>
-	    <div>
-		    <input  type="checkbox" value="ensalada" name="pedido[]"> Ensalada
-		    <p> <input  type="checkbox" value="ensalada cocida" name="pedido[]"> Ensalada cocida
-		    <p> <input  type="checkbox" value="ensalada cesar's" name="pedido[]"> Ensalada Cesar's
-		    <p> <input  type="checkbox" value="porcion papas" name="pedido[]"> Porcion de papas
-		    <p> <input  type="checkbox" value="1/4 pollo" name="pedido[]"> 1/4 de pollo
-		    <p> <input  type="checkbox" value="1/2 pollo" name="pedido[]"> 1/2 de pollo
-		    <p> <input  type="checkbox" value="1 pollo" name="pedido[]"> 1 pollo
-		    <p> <input  type="checkbox" value="salchipapa clásica" name="pedido[]"> Salchipapa clásica
-		    <p> <input  type="checkbox" value="salchipollo" name="pedido[]"> Salchipollo
-		    <p> <input  type="checkbox" value="coca cola 500ml"name="pedido[]"> Coca Cola 500ml
-                    <p> <input  type="checkbox" value="inca cola 500ml" name="pedido[]"> Inca Cola 500ml
-		    <p> <input  type="checkbox" value="coca cola 1.5l"name="pedido[]"> Coca Cola 1.5L
-		    <p> <input  type="checkbox" value="inca cola 1.5l" name="pedido[]"> Inca Cola 1.5L
-		    <p> <input  type="checkbox" value="jarra de chicha 1l" name="pedido[]"> Jarra de chicha 1L
-		    <p> <input  type="checkbox" value="jarra de limonada 1l" name="pedido[]"> Jarra de limonada 1L
+	    <div>   
+		 
+		    <input  type="checkbox" value="ensalada clasica" id="chk_1" onclick="actualizarValor(this.checked, '11');" name="pedido[]"> Ensalada clásica
+		    <p> <input  type="checkbox" value="ensalada cocida" id="chk_2" onclick="actualizarValor(this.checked, '13');" name="pedido[]"> Ensalada cocida
+		    <p> <input  type="checkbox" value="ensalada cesar's" id="chk_3" onclick="actualizarValor(this.checked, '14');" name="pedido[]"> Ensalada Cesar's
+		    <p> <input  type="checkbox" value="porcion papas"  id="chk_4" onclick="actualizarValor(this.checked, '6');" name="pedido[]"> Porción de papas
+		    <p> <input  type="checkbox" value="1/4 pollo"  id="chk_5" onclick="actualizarValor(this.checked, '16');" name="pedido[]"> 1/4 de pollo
+		    <p> <input  type="checkbox" value="1/2 pollo"  id="chk_6" onclick="actualizarValor(this.checked, '31');" name="pedido[]"> 1/2 de pollo
+		    <p> <input  type="checkbox" value="1 pollo"  id="chk_7"  onclick="actualizarValor(this.checked, '55');" name="pedido[]"> 1 pollo
+		    <p> <input  type="checkbox" value="salchipapa clásica"  id="chk_8" onclick="actualizarValor(this.checked, '9');" name="pedido[]"> Salchipapa clásica
+		    <p> <input  type="checkbox" value="salchipollo"  id="chk_9" onclick="actualizarValor(this.checked, '14');" name="pedido[]"> Salchipollo
+		    <p> <input  type="checkbox" value="coca cola 500ml"  id="chk_10" onclick="actualizarValor(this.checked, '2');" name="pedido[]"> Coca Cola 500ml
+                    <p> <input  type="checkbox" value="inca cola 500ml" id="chk_11" onclick="actualizarValor(this.checked, '2');" name="pedido[]"> Inca Cola 500ml
+		    <p> <input  type="checkbox" value="coca cola 1.5l"  id="chk_12" onclick="actualizarValor(this.checked, '10');" name="pedido[]"> Coca Cola 1.5L
+		    <p> <input  type="checkbox" value="inca cola 1.5l"  id="chk_13"  onclick="actualizarValor(this.checked, '10');" name="pedido[]"> Inca Cola 1.5L
+		    <p> <input  type="checkbox" value="jarra de chicha 1l" id="chk_14" onclick="actualizarValor(this.checked, '9');" name="pedido[]"> Jarra de chicha 1L
+		    <p> <input  type="checkbox" value="jarra de limonada 1l" id="chk_15" onclick="actualizarValor(this.checked, '9');" name="pedido[]"> Jarra de limonada 1L
 		    <div style="visibility:hidden; color:red; font-size: 18px; " id="chk_option_error">
 			   Eliga al menos un producto por favor..
 			   </div>
+	    </div>
+	    <div>
+		    <i>Total del pedido : S/ </i><input type="text" readonly id="txtValor" value="0" name="precio" />
 	    </div>
             <!--<div class="w3-row w3-section">
                 <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-calendar" style="color:#1c49a4;"></i></div>
